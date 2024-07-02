@@ -10,5 +10,5 @@ const port = process.env.PORT;
 
 //3. Escuchar nuestro servidor. (ejecutarlo)
 app.listen(port, ()=>{
-    console.log("El servidor seesta escuchando en: http://localhost:${port}");
+    console.log(`El servidor seesta escuchando en: http://localhost:${port}`);
 });

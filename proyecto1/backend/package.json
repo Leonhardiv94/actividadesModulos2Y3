@@ -4,8 +4,8 @@
   "description": "primer proyecto MEAN Stack",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node app.mjs",
+    "dev": "nodemon app.mjs"
   },
   "author": "LEONHARD IGLESIAS VARGAS",
   "license": "ISC",
