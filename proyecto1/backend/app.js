@@ -5,10 +5,10 @@ import dotenv from "dotenv";
 
 //2. Comfigurrar el uso de nuestro servidor y nuestras variables de:
 const app = express(); //configuramos nuestro servidor
+dotenv.config(); //configuramos nuestras variables de entorno
 const port = process.env.PORT;
-dotenv. config(); //configuramos nuestras variables de entorno
 
-//3. Escuchar nuestro servidor.
+//3. Escuchar nuestro servidor. (ejecutarlo)
 app.listen(port, ()=>{
-    console.log("Estoy funcionando");
+    console.log("El servidor seesta escuchando en: http://localhost:${port}");
 });
