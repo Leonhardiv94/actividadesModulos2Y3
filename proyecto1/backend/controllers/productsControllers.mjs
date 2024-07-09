@@ -5,7 +5,23 @@ import { productModel } from "../models/produtsModels.mjs";
 
 //Peticion GET -> se muestra los productos
 export const getProducts = async(req, res) =>{
-    return res.send("Funciono la peticion GET");
+    //return res.send("Funciono la peticion GET");
+    //manejo de errores
+    try{
+        //products -> arreglo
+        let products = await productModel.find();
+        //validacion en el caso de que no encuentre nada
+        if(!products){
+            //404 -> no se encontro lo que se estaba buscando
+            return res.status(404).json({message:"no se encontraron productos"})
+        }
+        //200 -> todo ok
+        return res.status(200).send(products);
+
+    }catch(error){
+        //500 -> error inesperado en el servidor
+        return res.status(500).json({message:"error de servidor" + error.message});
+    }
 }
 
 //Peticion POST -> me crea los productos
