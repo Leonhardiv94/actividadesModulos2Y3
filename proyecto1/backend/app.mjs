@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 //Variables de entorno -> nos guardan informacion delicada
 import connectionMongo from "./config/db.mjs";
+import productsRouter from "./routes/produtsRoutes";
 
 //2. Comfigurar el uso de nuestro servidor y nuestras variables de:
 const app = express(); //configuramos nuestro servidor
@@ -11,6 +12,8 @@ const port = process.env.PORT;
 
 //conectese a la base de datos
 connectionMongo();
+
+app.use("/", productsRouter);
 
 //Prueba
 app.get(`/`, (req, res)=>{
