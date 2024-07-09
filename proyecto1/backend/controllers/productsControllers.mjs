@@ -1,5 +1,5 @@
 //1. Importamos los modulos o dependencias que necesitemos.
-import { productModel } from "../models/produtsModels";
+import { productModel } from "../models/produtsModels.mjs";
 
 //Prueba inicial de mis controladores
 
