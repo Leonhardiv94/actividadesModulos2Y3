@@ -16,7 +16,7 @@ export const getProducts = async(req, res) =>{
             return res.status(404).json({message:"no se encontraron productos"});
         }
         //200 -> todo ok
-        return res.status(200).send(products).json({message:"todo esta bien"});
+        return res.status(200).json({message:"todo esta bien"}).send(products);
 
     }catch(error){
         //500 -> error inesperado en el servidor
