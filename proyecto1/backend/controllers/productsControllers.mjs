@@ -1,5 +1,5 @@
 //1. Importamos los modulos o dependencias que necesitemos.
-import { productModel } from "../models/produtsModels.mjs";
+import { productModel } from "../models/productsModels.mjs";
 
 //Prueba inicial de mis controladores
 
@@ -13,7 +13,7 @@ export const getProducts = async(req, res) =>{
         //validacion en el caso de que no encuentre nada
         if(!products){
             //404 -> no se encontro lo que se estaba buscando
-            return res.status(404).json({message:"no se encontraron productos"})
+            return res.status(404).json({message:"no se encontraron productos"});
         }
         //200 -> todo ok
         return res.status(200).send(products);
