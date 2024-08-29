@@ -29,7 +29,7 @@ export const getProducts = async (req, res) => {
 
 
 //Petición POST -> me crea los productos uno por uno
-export const postProduct = async (req, res) => {
+export const postProducts = async (req, res) => {
     //body -> contenido de mi petición -> los datos que tu le das para que se pueda crear el producto nuevo
     const { nombre, imagen, precio } = req.body;
 
@@ -52,7 +52,7 @@ export const postProduct = async (req, res) => {
 }
 
 //Petición DELETE -> me elimina los productos por ID
-export const deleteProductById = async (req, res) => {
+export const deleteProductsById = async (req, res) => {
     try {
         let idForDelete = req.params._id;
         let productDeleted = await productModel.findByIdAndDelete(idForDelete);
@@ -70,7 +70,7 @@ export const deleteProductById = async (req, res) => {
 }
 
 //Petición PUT -> me actualiza los productos por ID
-export const putProductById = async (req, res) => {
+export const putProductsById = async (req, res) => {
     try {
         //acceder a nuestro parámetro _id
         let idForUpdate = req.params._id;
