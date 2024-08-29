@@ -2,8 +2,8 @@
 import express from "express";
 import dotenv from "dotenv";
 //Variables de entorno -> nos guardan informacion delicada
-import connectionMongo from "./config/db.mjs";
-import productsRouter from "./routes/productsRoutes.mjs";
+import connectionMongo from "./config/db.js";
+import productsRouter from "./routes/productsRoutes.js";
 
 //2. Comfigurar el uso de nuestro servidor y nuestras variables de:
 const app = express(); //configuramos nuestro servidor
