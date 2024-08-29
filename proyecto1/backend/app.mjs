@@ -13,6 +13,9 @@ const port = process.env.PORT;
 //conectese a la base de datos
 connectionMongo();
 
+//middleware
+app.use(express.json());
+
 app.use("/", productsRouter);
 
 //Prueba

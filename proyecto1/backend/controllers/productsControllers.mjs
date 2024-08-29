@@ -11,7 +11,7 @@ export const getProducts = async(req, res) =>{
         //products -> arreglo
         let products = await productModel.find();
         //validacion en el caso de que no encuentre nada
-        if(!products){
+        if(!products.length === 0){
             //404 -> no se encontro lo que se estaba buscando
             return res.status(404).json({message:"no se encontraron productos"});
         }
