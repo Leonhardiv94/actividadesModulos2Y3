@@ -13,10 +13,6 @@ const productSchema = new schema({
     precio:{
         type: Number,
         require: true
-    },
-    tamaño:{
-        type: String,
-        require: true
     }
 });
 
@@ -24,4 +20,4 @@ const productSchema = new schema({
 //mongoose.model() -> crear modelo
 //1. nombre de la coleccion que va a guardar los datos
 //2. necesitamos darle como parametro el Schema que hicimos
-export const productModel = mongoose.model("usuario", productSchema);
+export const productsModel = mongoose.model("usuario", productSchema);
