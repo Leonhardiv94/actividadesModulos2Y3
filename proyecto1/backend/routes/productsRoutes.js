@@ -1,7 +1,7 @@
 //Importaciones
 import express from "express"
 //Importar nuestros controladores
-import { getProducts, postProducts, deleteProductsById, putProductsById } from "../controllers/productsControllers.mjs";
+import { getProducts, postProducts, deleteProductsById, putProductsById } from "../controllers/productsControllers.js";
 
 //configuramos el Router de express
 const productsRouter = express.Router();
