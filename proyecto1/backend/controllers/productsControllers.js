@@ -1,5 +1,5 @@
 //1. Importamos los modulos o dependencias que necesitamos
-import { productsModel } from '../models/productsModels.js';
+import { productModel } from '../models/productsModels.js';
 
 
 //Prueba inicial de mis controladores

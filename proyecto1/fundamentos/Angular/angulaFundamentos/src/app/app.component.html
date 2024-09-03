@@ -1,0 +1,30 @@
+<h1>Hola, aca empezamos con angular</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Compu Space</title>
+    <link rel="stylesheet" href="./app.component.css"> 
+</head>
+<body>
+    <div class="container">
+        <img src="./logon.png" alt="Compu Space Logo"> 
+        <input type="text" placeholder="Nombre Completo">
+        <input type="password" placeholder="Contraseña">
+        <input type="text" placeholder="Edad">
+        <input type="date" placeholder="dd/mm/aaaa">
+        <input type="email" placeholder="Email">
+        <button id="registerButton">Registrate</button>
+    </div>
+
+    <script>
+        document.getElementById('registerButton').addEventListener('click', function() {
+            window.location.href = 'inicio_seccion.html'; 
+        });
+    </script>
+</body>
+</html>
+
+
+
